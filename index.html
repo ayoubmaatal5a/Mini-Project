@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icon/favvicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="icon/star.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
-    <title>Le Maroc</title>
+    <title>Le Royaume du Maroc</title>
 
     <style>
         /* Header */
@@ -24,6 +24,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            z-index: 9999;
         }
 
         .logo {
@@ -44,8 +45,12 @@
 
         .spanlogo {
             font-size: 1.1rem;
-            color: white;
             margin-left: 10px;
+        }
+
+        .aacc{
+            color: white;
+            text-decoration: none;
         }
 
         .img {
@@ -725,7 +730,7 @@
     <header>
         <div class="logo">
             <img class="ilogo" src="icon/star.png" alt="flag maroc">
-            <span class="spanlogo">Le Royaume du Maroc</span>
+            <span class="spanlogo"><a class="aacc" href="index.html">Le Royaume du Maroc</a></span>
         </div>
 
         <nav>
@@ -1023,7 +1028,7 @@
                     tout en respectant ses traditions et son héritage historique.
                 </p>
                 <div class="imgdecoration">
-                    <img id="roi" src="/img/king.jpg" alt="le roi de maroc">
+                    <img id="roi" src="img/king.jpg" alt="le roi de maroc">
                 </div>
                 <h3><span class="sorang">Le</span> roi Mohammed VI :</h3>
                 <p>Le roi <strong>Mohammed VI</strong> est le souverain du <span class="sorang">Maroc</span> depuis le
