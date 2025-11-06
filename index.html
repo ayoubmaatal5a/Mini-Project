@@ -83,7 +83,7 @@
         #tourisme,
         #sport,
         #contact,
-        #accueil{
+        #accueil {
             display: inline-flex;
             align-items: center;
             padding: 0px 15px;
@@ -103,6 +103,7 @@
         }
 
         /* main */
+        
         main {
             width: 100%;
             align-items: center;
@@ -121,7 +122,7 @@
             height: 400px;
         }
 
-          #sh {
+        #sh {
             color: #f66206;
             background-color: white;
             border-radius: 10px;
@@ -323,6 +324,12 @@
             transform: scale(1.02);
         }
 
+        /* footer */
+
+        #contactez {
+            display: none;
+        }
+
         @media (max-width: 575px) {
 
             /* HEADER*/
@@ -439,6 +446,13 @@
             h5 {
                 font-size: 0.8rem;
             }
+
+            /* footer */
+
+            #contactez {
+                display: block;
+            }
+
         }
 
         @media (min-width: 575px) and (max-width: 825px) {
@@ -570,6 +584,13 @@
             .divmedia {
                 margin: 15px 20px 10px auto;
             }
+
+            /* footer */
+
+            #contactez {
+                display: block;
+            }
+
         }
 
         @media (min-width: 825px) and (max-width: 991px) {
@@ -685,6 +706,12 @@
                 border-radius: 10px;
             }
 
+              /* footer */
+
+            #contactez {
+                display: none;
+            }
+
         }
     </style>
 </head>
@@ -717,7 +744,7 @@
         <section class="sbanner">
             <section id="m-info">
                 <div class="div-info">
-                    <h2><span class="sorang">Le</span> Maroc : Un Pays aux Portes de l’Afrique et de l’Europe
+                    <h2 id="par1"><span class="sorang">Le</span> Maroc : Un Pays aux Portes de l’Afrique et de l’Europe
                     </h2>
                     <div id="map"></div>
                     <p>
@@ -732,7 +759,8 @@
                         kilomètres.
                     </p>
                     <h3><span class="sorang">Les</span> Frontières et la Position Géographique:</h3>
-                    <p>Le <span class="sorang">Maroc</span> est limité au nord par la mer Méditerranée, à l’ouest par l’océan Atlantique, à l’est
+                    <p>Le <span class="sorang">Maroc</span> est limité au nord par la mer Méditerranée, à l’ouest par
+                        l’océan Atlantique, à l’est
                         par
                         l’Algérie et au sud par le Sahara. Cette diversité géographique lui confère une grande ouverture
                         sur
@@ -765,15 +793,18 @@
                     </p>
                     <h3><span class="sorang">Une</span> Importance Stratégique Historique et Moderne :</h3>
                     <p>
-                        Grâce à sa position géographique, le <span class="sorang">Maroc</span> a toujours occupé un rôle essentiel dans les échanges
+                        Grâce à sa position géographique, le <span class="sorang">Maroc</span> a toujours occupé un rôle
+                        essentiel dans les échanges
                         entre les civilisations. Dans l’Antiquité, il servait de point de rencontre entre les routes
                         commerciales africaines et méditerranéennes. Aujourd’hui encore, cette position stratégique fait
                         du
-                        pays une porte d’entrée vers l’Afrique pour l’Europe et le monde arabe. Le <span class="sorang">Maroc</span> renforce sans
+                        pays une porte d’entrée vers l’Afrique pour l’Europe et le monde arabe. Le <span
+                            class="sorang">Maroc</span> renforce sans
                         cesse
                         ses infrastructures portuaires et routières, comme en témoigne le port de Tanger Med, l’un des
                         plus
-                        grands d’Afrique, reliant directement le <span class="sorang">Maroc</span> à plus de <span class="number">180</span> ports
+                        grands d’Afrique, reliant directement le <span class="sorang">Maroc</span> à plus de <span
+                            class="number">180</span> ports
                         internationaux.
                     </p>
 
@@ -781,7 +812,7 @@
             </section>
             <div id="banner2"></div>
             <div id="region">
-                <h3><span class="sorang">Les</span> Régions du Maroc et Leurs Principales Villes :</h3>
+                <h2 id="par2"><span class="sorang">Les</span> Régions du Maroc et Leurs Principales Villes :</h2>
                 <p>
                     Le Maroc est divisé en 12 régions administratives, chacune comprenant plusieurs provinces et
                     préfectures.
@@ -968,7 +999,7 @@
             </div>
             <div id="banner2"></div>
             <div class="s-monarchique">
-                <h2><span class="sorang">Le</span> système monarchique marocain</h2>
+                <h2 id="par3"><span class="sorang">Le</span> système monarchique marocain</h2>
                 <p>Le régime monarchique au <span class="sorang">Maroc</span> possède des racines très anciennes. Il
                     remonte au VIIIᵉ siècle, avec
                     la fondation du premier État marocain par <strong>Idriss Ier</strong> en <strong>788</strong>,
@@ -991,22 +1022,28 @@
                     <img id="roi" src="/img/king.jpg" alt="le roi de maroc">
                 </div>
                 <h3><span class="sorang">Le</span> roi Mohammed VI :</h3>
-                <p>Le roi <strong>Mohammed VI</strong> est le souverain du <span class="sorang">Maroc</span> depuis le <span class="number">23</span> juillet <span class="number">1999</span>, succédant à
+                <p>Le roi <strong>Mohammed VI</strong> est le souverain du <span class="sorang">Maroc</span> depuis le
+                    <span class="number">23</span> juillet <span class="number">1999</span>, succédant à
                     son père, le roi
-                    Hassan II. Né le <span class="number">21</span> août <span class="number">1963</span> à Rabat, il a suivi une formation universitaire en droit et en
+                    Hassan II. Né le <span class="number">21</span> août <span class="number">1963</span> à Rabat, il a
+                    suivi une formation universitaire en droit et en
                     sciences politiques. Sous son règne, le Maroc a connu de nombreuses réformes économiques et
                     sociales, ainsi qu’une modernisation des infrastructures. Le roi <strong>Mohammed VI</strong> est
                     également connu
                     pour ses actions en faveur du développement humain, de la justice sociale et de la promotion des
-                    énergies renouvelables.</p>
-                <h2><span class="sorang">L</span>’hymne national marocain</h2>
+                    énergies renouvelables.
+                </p>
+                <h2 id="par4"><span class="sorang">L</span>’hymne national marocain</h2>
                 <p>Le hymne national marocain, intitulé "Hymne Chérifien", est un symbole fort de l’unité et de la
-                    fierté du Royaume du <span class="sorang">Maroc</span>. Sa musique a été composée par Léo Morgan en <span class="number">1956</span>, peu après
+                    fierté du Royaume du <span class="sorang">Maroc</span>. Sa musique a été composée par Léo Morgan en
+                    <span class="number">1956</span>, peu après
                     l’indépendance du pays, tandis que les paroles actuelles ont été écrites par le poète Ali Squalli
-                    Houssaini en <span class="number">1970</span>. Cet hymne exprime l’amour de la patrie, le dévouement au Roi et la volonté du
+                    Houssaini en <span class="number">1970</span>. Cet hymne exprime l’amour de la patrie, le dévouement
+                    au Roi et la volonté du
                     peuple marocain de défendre sa liberté et son intégrité. Il est chanté lors des cérémonies
                     officielles, des fêtes nationales et des événements sportifs, rappelant à chaque citoyen
-                    l’attachement profond à sa nation et à ses valeurs.</p>
+                    l’attachement profond à sa nation et à ses valeurs.
+                </p>
                 <div class="mp3">
                     <div class="divmedia">
                         <h5>L’hymne national marocain</h5>
@@ -1022,10 +1059,25 @@
         </section>
     </main>
     <footer>
-        <p class="p-footer">Contact</p>
-        <a href="mailto:ayoub.maatala.1999@gmail.com">Envoyez-nous un e-mail</a>
-        <p class="pfooter"> © Tous droits réservés | Mini project</p>
-
+        <div class="sitemap">
+            <h4>Plan du site</h4>
+            <ul class="ulmap">
+                <li>
+                    <a href="#par1">Le Maroc : Un Pays aux Portes de l’Afrique et de l’Europe</a>
+                </li>
+                <li>
+                    <a href="#par2">Les Régions du Maroc et Leurs Principales Villes :</a>
+                </li>
+                <li>
+                    <a href="#par3">Le système monarchique marocain</a>
+                </li>
+                <li>
+                    <a href="#par4">L’hymne national marocain</a>
+                </li>
+            </ul>
+        </div>
+        <p class="pfooter">© Tous droits réservés | Ayoub Maatala | Mini project<a id="contactez"
+                href="contact.html">contactez nous</a></p>
     </footer>
 </body>
 

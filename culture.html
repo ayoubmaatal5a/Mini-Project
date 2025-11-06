@@ -107,6 +107,7 @@
             width: 100%;
             align-items: center;
             transition: all 0.3s ease;
+            padding-bottom: 20px;
         }
 
         .imgbg {
@@ -202,8 +203,15 @@
         .images img:hover {
             transform: scale(0.95);
         }
-        ul{
+
+        ul {
             margin: 0px 30px;
+        }
+
+        /* footer */
+
+        #contactez {
+            display: none;
         }
 
         @media (max-width: 575px) {
@@ -272,6 +280,13 @@
                 width: 90%;
                 height: 250px;
             }
+
+            /* footer */
+
+            #contactez {
+                display: block;
+            }
+
         }
 
         @media (min-width: 575px) and (max-width: 825px) {
@@ -334,6 +349,13 @@
             .m-info {
                 padding: 5px 30px;
             }
+
+            /* footer */
+
+            #contactez {
+                display: block;
+            }
+
         }
 
         @media (min-width: 825px) and (max-width: 991px) {
@@ -391,6 +413,13 @@
             .m-info {
                 padding: 10px 35px;
             }
+
+            /* footer */
+
+            #contactez {
+                display: none;
+            }
+
         }
     </style>
 </head>
@@ -421,7 +450,7 @@
         </div>
         <section>
             <div class="m-info">
-                <h2><span class="s">La </span>Culture Marocaine : Un Mélange Unique et Envoûtant</h2>
+                <h2 id="par1"><span class="s">La </span>Culture Marocaine : Un Mélange Unique et Envoûtant</h2>
                 <p>La culture <span class="s">marocaine</span> est un véritable voyage à travers le temps, une mosaïque
                     vivante où se mêlent
                     traditions millénaires et modernité vibrante. Héritière d’une histoire riche et complexe, elle puise
@@ -443,7 +472,8 @@
                     hospitalité, partage et
                     respect des différences constituent les fondements d’une société fière de son passé et tournée vers
                     l’avenir.</p>
-                <h2><span class="s">La </span>Tbourida : un art équestre marocain entre tradition et fierté</h2>
+                <h2 id="par2"><span class="s">La </span>Tbourida : un art équestre marocain entre tradition et fierté
+                </h2>
                 <h3>Origine et histoire de la Tbourida</h3>
                 <p>L’origine de la <span class="s">Tbourida</span> remonte à plusieurs siècles, à l’époque où les
                     cavaliers marocains
@@ -464,7 +494,7 @@
                     <img src="img/tbourida5.jpg" alt="tbourida">
                     <img src="img/tbourida6.jpg" alt="tbourida">
                 </div>
-                <h2><span class="s">L</span>’Artisanat traditionnel marocain : un patrimoine vivant</h2>
+                <h2 id="par3"><span class="s">L</span>’Artisanat traditionnel marocain : un patrimoine vivant</h2>
                 <h3>Les principales formes d’artisanat</h3>
                 <p><span class="num">1.</span> La céramique et la poterie
                     Fabrication d’ustensiles et d’objets décoratifs faits à la main.
@@ -504,7 +534,7 @@
                     <img src="img/art5.jpg" alt="art">
                     <img src="img/art6.jpg" alt="art">
                 </div>
-                <h2> <span class="s">Le</span> patrimoine architectural et historique du Maroc</h2>
+                <h2 id="par4"> <span class="s">Le</span> patrimoine architectural et historique du Maroc</h2>
                 <h3>L’architecture traditionnelle</h3>
                 <p>L’architecture traditionnelle marocaine se distingue par son harmonie entre beauté, spiritualité et
                     fonctionnalité.
@@ -566,7 +596,7 @@
                     <img src="img/arch5.jpg" alt="arch">
                     <img src="img/arch6.jpg" alt="arch">
                 </div>
-                <h2><span class="s">La</span> cuisine marocaine : un art du goût et de la tradition</h2>
+                <h2 id="par5"><span class="s">La</span> cuisine marocaine : un art du goût et de la tradition</h2>
                 <p>La cuisine marocaine est l’une des plus riches et des plus célèbres au monde. Elle se distingue par
                     sa grande diversité et par la combinaison harmonieuse des influences arabes, berbères, andalouses et
                     méditerranéennes. Elle repose sur des ingrédients frais et naturels comme les olives, les légumes,
@@ -655,6 +685,32 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="sitemap">
+            <h4>Plan du site</h4>
+            <ul class="ulmap">
+                <li>
+                    <a href="#par1">La Culture Marocaine : Un Mélange Unique et Envoûtant</a>
+                </li>
+                <li>
+                    <a href="#par2">La Tbourida : un art équestre marocain entre tradition et fierté</a>
+                </li>
+                <li>
+                    <a href="#par3">L’Artisanat traditionnel marocain : un patrimoine vivant</a>
+                </li>
+                <li>
+                    <a href="#par4">Le patrimoine architectural et historique du Maroc</a>
+                </li>
+                <li>
+                    <a href="#par5">La cuisine marocaine : un art du goût et de la tradition</a>
+                </li>
+            </ul>
+        </div>
+        <p class="pfooter">© Tous droits réservés | Ayoub Maatala | Mini project<a id="contactez"
+                href="contact.html">contactez nous</a></p>
+    </footer>
+
 </body>
 
 </html>

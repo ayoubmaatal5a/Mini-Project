@@ -5,6 +5,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     src: url(../fonts/mfont.ttf);
     font-family: 'mfont';
@@ -21,17 +25,52 @@ body {
     min-height: 100vh;
 }
 
+h4 {
+    color: white;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+
+
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #1B2D41;
     padding: 20px;
 }
 
 footer p {
     color: white;
-    margin-bottom: 30px;
+    font-size: 1rem;
+    text-align: center;
 }
 
 footer a {
     color: white;
     text-decoration: none;
+}
+
+.sitemap {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.ulmap li {
+    color: white;
+}
+
+.ulmap li:hover {
+    text-decoration: underline;
+}
+
+#contactez {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: underline;
+    margin-left: 10px;
+    color: rgb(255, 247, 0);
 }
