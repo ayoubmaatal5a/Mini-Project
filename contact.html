@@ -272,18 +272,44 @@
         }
 
         @media (max-width: 575px) {
+
+            /* header */
+
             .logo {
                 display: none;
             }
 
+            header {
+                justify-content: center;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
             nav a {
                 font-size: 0.8rem;
+                text-decoration: none;
                 margin-left: 15px;
             }
 
             .img {
                 display: none;
             }
+
+            #culture,
+            #tourisme,
+            #sport,
+            #contact,
+            #accueil {
+                padding: 0px 8px;
+                height: 33px;
+                gap: 5px;
+            }
+
+            #contact {
+                display: none;
+            }
+
+            /* main */
 
             .contact-layout {
                 flex-direction: column;
@@ -314,9 +340,41 @@
         }
 
         @media (min-width: 575px) and (max-width: 825px) {
+
+            /* header */
+
             .logo {
                 display: none;
             }
+
+            header {
+                justify-content: center;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                text-decoration: none;
+                margin-left: 30px;
+            }
+
+            #culture,
+            #tourisme,
+            #sport,
+            #contact,
+            #accueil {
+                padding: 0px 9px;
+                height: 34px;
+                gap: 5px;
+            }
+
+            #contact {
+                display: none;
+            }
+
+            /* main */
+
 
             .contact-layout {
                 flex-direction: column;
@@ -344,6 +402,34 @@
         }
 
         @media (min-width: 825px) and (max-width: 991px) {
+
+            /* header */
+
+            header {
+                justify-content: space-between;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+
+            nav a {
+                font-size: 0.8rem;
+                text-decoration: none;
+                margin-left: 15px;
+            }
+
+            #culture,
+            #tourisme,
+            #sport,
+            #contact,
+            #accueil {
+                padding: 0px 10px;
+                height: 35px;
+                gap: 5px;
+            }
+
+            /* main */
+
+
             .d1 {
                 padding: 35px;
             }
@@ -369,6 +455,12 @@
         <nav>
             <a id="accueil" class="navhover" href="index.html"><img id="imga" class="img" src="icon/accueil.png"
                     alt="Accueil">Accueil</a>
+            <a id="culture" class="navhover" href="culture.html"><img id="imgc" class="img" src="icon/culture.png"
+                    alt="Culture">Culture</a>
+            <a id="tourisme" class="navhover" href="tourisme.html"> <img id="imgt" class="img" src="icon/tour.png"
+                    alt="Tourisme">Tourisme</a>
+            <a id="sport" class="navhover" href="sport.html"><img id="imgs" class="img" src="icon/sport.png"
+                    alt="Sport">Sports</a>
             <a id="contact" href="contact.html"><img id="imgs" class="img" src="icon/contact.png"
                     alt="Contact">Contact</a>
         </nav>
