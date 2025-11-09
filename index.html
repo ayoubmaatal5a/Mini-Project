@@ -281,6 +281,7 @@
         }
 
         .imgdecoration {
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -290,16 +291,38 @@
         }
 
         #roi {
+            background: url('img/king.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             border-radius: 5px;
             display: block;
-            width: 100%;
+            width: 900px;
+            height: 400px;
             max-width: 100%;
             transition: all 0.3s ease;
             box-shadow: 5px 5px 4px rgb(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        #roi div h6 {
+            display: inline-block;
+            color: white;
+            font-size: 1rem;
+            backdrop-filter: blur(2px);
+            border: 1.4px solid white;
+            border-radius: 50px;
+            font-weight: normal;
+            padding: 5px 10px;
         }
 
         #roi:hover {
             transform: scale(1.01);
+        }
+
+        #roi:hover div {
+            transition: all 1.5s ease;
+            transform: translateX(-500px);
         }
 
         .mp3 {
@@ -447,6 +470,16 @@
 
             }
 
+            #roi {
+                height: 230px;
+                padding: 10px;
+            }
+
+             #roi div h6 {
+            font-size: 0.6rem;
+            padding: 5px 10px;
+        }
+
             .mp3 {
                 display: block;
                 margin: 30px auto;
@@ -566,13 +599,18 @@
                 padding: 0px 15px;
             }
 
-            .s-monarchique {
-                padding: 0px 30px;
+            #roi {
+                height: 300px;
+                padding: 15px;
             }
 
-            .imgdecoration {
-                padding: 0px 15px;
+             #roi div h6 {
+            font-size: 0.8rem;
+            padding: 5px 8px;
+        }
 
+            .s-monarchique {
+                padding: 0px 30px;
             }
 
             .mp3 {
@@ -705,7 +743,7 @@
 
             }
 
-            .divmedia {
+            F .divmedia {
                 width: 100%;
                 margin: 15px 20px 10px;
             }
@@ -1033,7 +1071,11 @@
                     tout en respectant ses traditions et son héritage historique.
                 </p>
                 <div class="imgdecoration">
-                    <img id="roi" src="img/king.jpg" alt="le roi de maroc">
+                    <div id="roi">
+                        <div>
+                            <h6>Mohammed VI</h6>
+                        </div>
+                    </div>
                 </div>
                 <h3><span class="sorang">Le</span> roi Mohammed VI :</h3>
                 <p>Le roi <strong>Mohammed VI</strong> est le souverain du <span class="sorang">Maroc</span> depuis le
