@@ -97,12 +97,12 @@
             gap: 5px;
         }
 
-        .navhover:hover { 
+        .navhover:hover {
             transform: scale(1.03);
         }
 
         #culture:hover {
-          transform: scale(1.03); 
+            transform: scale(1.03);
         }
 
         /*MAIN*/
@@ -208,7 +208,7 @@
 
         }
 
-        .images img {
+        .images .imge {
             object-fit: cover;
             border-radius: 10px;
             margin: 15px auto;
@@ -216,11 +216,204 @@
             height: 300px;
             transition: all 0.3s ease;
             box-shadow: 5px 5px 4px rgb(0, 0, 0, 0.2);
+            padding: 15px;
+            overflow: hidden;
+            position: relative;
         }
 
-        .images img:hover {
-            transform: scale(0.95);
+        .images .imge:hover {
+            transform: scale(1.03);
         }
+
+        .images .imge:hover h6 {
+            transition: all 1.5s ease;
+            transform: translateX(-500px);
+        }
+
+        /* image src */
+
+        .imge h6 {
+            transition: all 0.3s ease;
+            transform: translateX(0);
+            display: inline-block;
+            color: white;
+            font-size: 0.9rem;
+            backdrop-filter: blur(2px);
+            border: 1.4px solid white;
+            border-radius: 50px;
+            font-weight: normal;
+            padding: 5px 10px;
+        }
+
+        #tbourida1 {
+            background: url('img/tbourida1.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        #tbourida2 {
+            background: url('img/tbourida2.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #tbourida3 {
+            background: url('img/tbourida3.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #tbourida4 {
+            background: url('img/tbourida4.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #tbourida5 {
+            background: url('img/tbourida5.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #tbourida6 {
+            background: url('img/tbourida6.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #artisana1 {
+            background: url('img/art1.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #artisana2 {
+            background: url('img/art2.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #artisana3 {
+            background: url('img/art3.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #artisana4 {
+            background: url('img/art4.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #artisana5 {
+            background: url('img/art5.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #artisana6 {
+            background: url('img/art6.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #pat-arch1 {
+            background: url('img/arch1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #pat-arch2 {
+            background: url('img/arch2.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #pat-arch3 {
+            background: url('img/arch3.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #pat-arch4 {
+            background: url('img/arch4.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #pat-arch5 {
+            background: url('img/arch5.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #pat-arch6 {
+            background: url('img/arch6.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #cuisson1 {
+            background: url('img/food1.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #cuisson2 {
+            background: url('img/food2.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #cuisson3 {
+            background: url('img/food3.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #cuisson4 {
+            background: url('img/food4.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #cuisson5 {
+            background: url('img/food5.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #cuisson6 {
+            background: url('img/food6.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
 
         ul {
             margin: 0px 30px;
@@ -297,10 +490,15 @@
                 padding: 0px 20px;
             }
 
-            .images img {
+            .images .imge {
                 margin: 15px auto;
                 width: 90%;
                 height: 250px;
+            }
+
+            .imge h6 {
+                font-size: 0.6rem;
+                padding: 5px 10px;
             }
 
             /* footer */
@@ -370,6 +568,11 @@
 
             .m-info {
                 padding: 5px 30px;
+            }
+
+            .imge h6 {
+                font-size: 0.8rem;
+                padding: 5px 8px;
             }
 
             /* footer */
@@ -509,12 +712,24 @@
                     détonation collective des fusils à la fin de la charge.</p>
                 <h3>Quelques <span class="s">Photo</span> :</h3>
                 <div class="images">
-                    <img src="img/tbourida1.jpg" alt="tbourida">
-                    <img src="img/tbourida2.jpg" alt="tbourida">
-                    <img src="img/tbourida3.jpg" alt="tbourida">
-                    <img src="img/tbourida4.jpg" alt="tbourida">
-                    <img src="img/tbourida5.jpg" alt="tbourida">
-                    <img src="img/tbourida6.jpg" alt="tbourida">
+                    <div class="imge" id="tbourida1">
+                        <h6>Photo1</h6>
+                    </div>
+                    <div class="imge" id="tbourida2">
+                        <h6>Photo2</h6>
+                    </div>
+                    <div class="imge" id="tbourida3">
+                        <h6>Photo3</h6>
+                    </div>
+                    <div class="imge" id="tbourida4">
+                        <h6>Photo4</h6>
+                    </div>
+                    <div class="imge" id="tbourida5">
+                        <h6>Photo5</h6>
+                    </div>
+                    <div class="imge" id="tbourida6">
+                        <h6>Photo6</h6>
+                    </div>
                 </div>
                 <h2 id="par3"><span class="s">L</span>’Artisanat traditionnel marocain : un patrimoine vivant</h2>
                 <h3>Les principales formes d’artisanat</h3>
@@ -549,12 +764,24 @@
                 </p>
                 <h3>Quelques <span class="s">Photo</span> :</h3>
                 <div class="images">
-                    <img src="img/art1.jpg" alt="art">
-                    <img src="img/art2.jpg" alt="art">
-                    <img src="img/art3.jpg" alt="art">
-                    <img src="img/art4.jpg" alt="art">
-                    <img src="img/art5.jpg" alt="art">
-                    <img src="img/art6.jpg" alt="art">
+                    <div class="imge" id="artisana1">
+                        <h6>Photo1</h6>
+                    </div>
+                    <div class="imge" id="artisana2">
+                        <h6>Photo2</h6>
+                    </div>
+                    <div class="imge" id="artisana3">
+                        <h6>Photo3</h6>
+                    </div>
+                    <div class="imge" id="artisana4">
+                        <h6>Photo4</h6>
+                    </div>
+                    <div class="imge" id="artisana5">
+                        <h6>Photo5</h6>
+                    </div>
+                    <div class="imge" id="artisana6">
+                        <h6>Photo6</h6>
+                    </div>
                 </div>
                 <h2 id="par4"> <span class="s">Le</span> patrimoine architectural et historique du Maroc</h2>
                 <h3>L’architecture traditionnelle</h3>
@@ -611,12 +838,24 @@
                     et présent.</p>
                 <h3>Quelques <span class="s">Photo</span> :</h3>
                 <div class="images">
-                    <img src="img/arch1.png" alt="arch">
-                    <img src="img/arch2.jpg" alt="arch">
-                    <img src="img/arch3.jpg" alt="arch">
-                    <img src="img/arch4.jpg" alt="arch">
-                    <img src="img/arch5.jpg" alt="arch">
-                    <img src="img/arch6.jpg" alt="arch">
+                    <div class="imge" id="pat-arch1">
+                        <h6>Photo1</h6>
+                    </div>
+                    <div class="imge" id="pat-arch2">
+                        <h6>Photo2</h6>
+                    </div>
+                    <div class="imge" id="pat-arch3">
+                        <h6>Photo3</h6>
+                    </div>
+                    <div class="imge" id="pat-arch4">
+                        <h6>Photo4</h6>
+                    </div>
+                    <div class="imge" id="pat-arch5">
+                        <h6>Photo5</h6>
+                    </div>
+                    <div class="imge" id="pat-arch6">
+                        <h6>Photo6</h6>
+                    </div>
                 </div>
                 <h2 id="par5"><span class="s">La</span> cuisine marocaine : un art du goût et de la tradition</h2>
                 <p>La cuisine marocaine est l’une des plus riches et des plus célèbres au monde. Elle se distingue par
@@ -697,12 +936,24 @@
                 </p>
                 <h3>Quelques <span class="s">Photo</span> :</h3>
                 <div class="images">
-                    <img src="img/food1.jpg" alt="img">
-                    <img src="img/food2.jpg" alt="img">
-                    <img src="img/food3.jpg" alt="img">
-                    <img src="img/food4.jpg" alt="img">
-                    <img src="img/food5.jpg" alt="img">
-                    <img src="img/food6.jpg" alt="img">
+                    <div class="imge" id="cuisson1">
+                        <h6>Photo1</h6>
+                    </div>
+                    <div class="imge" id="cuisson2">
+                        <h6>Photo2</h6>
+                    </div>
+                    <div class="imge" id="cuisson3">
+                        <h6>Photo3</h6>
+                    </div>
+                    <div class="imge" id="cuisson4">
+                        <h6>Photo4</h6>
+                    </div>
+                    <div class="imge" id="cuisson5">
+                        <h6>Photo5</h6>
+                    </div>
+                    <div class="imge" id="cuisson6">
+                        <h6>Photo6</h6>
+                    </div>
                 </div>
                 <h2 id="par6"><span class="s">La</span> culture marocaine : un héritage vivant entre tradition et
                     modernité</h2>

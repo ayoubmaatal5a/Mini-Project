@@ -10,6 +10,7 @@
 
     <style>
         /* Header */
+
         header {
             position: fixed;
             width: 100%;
@@ -298,11 +299,13 @@
             border-radius: 5px;
             display: block;
             width: 900px;
-            height: 400px;
+            height: 500px;
             max-width: 100%;
             transition: all 0.3s ease;
             box-shadow: 5px 5px 4px rgb(0, 0, 0, 0.2);
             padding: 20px;
+            overflow: hidden;
+            position: relative;
         }
 
         #roi div h6 {
@@ -318,6 +321,11 @@
 
         #roi:hover {
             transform: scale(1.01);
+        }
+
+        #roi div {
+            transition: all 0.3s ease;
+            transform: translateX(0);
         }
 
         #roi:hover div {
@@ -475,10 +483,10 @@
                 padding: 10px;
             }
 
-             #roi div h6 {
-            font-size: 0.6rem;
-            padding: 5px 10px;
-        }
+            #roi div h6 {
+                font-size: 0.6rem;
+                padding: 5px 10px;
+            }
 
             .mp3 {
                 display: block;
@@ -604,10 +612,10 @@
                 padding: 15px;
             }
 
-             #roi div h6 {
-            font-size: 0.8rem;
-            padding: 5px 8px;
-        }
+            #roi div h6 {
+                font-size: 0.8rem;
+                padding: 5px 8px;
+            }
 
             .s-monarchique {
                 padding: 0px 30px;

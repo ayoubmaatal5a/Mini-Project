@@ -32,7 +32,24 @@ h4 {
     text-decoration: underline;
 }
 
+/* header */
 
+.logo:hover .ilogo {
+    animation: rotationinf 2s linear infinite
+}
+
+@keyframes rotationinf {
+
+    form {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* footer */
 
 footer {
     display: flex;
