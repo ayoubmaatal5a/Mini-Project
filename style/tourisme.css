@@ -220,6 +220,8 @@ p {
     font-size: 1.2rem;
     text-indent: 30px;
     transition: all 0.3s ease;
+    text-align: justify;
+
 }
 
 .number {
@@ -243,7 +245,6 @@ p {
 
 .statistique {
     width: 100%;
-    padding: 0px 60px;
 }
 
 table {
@@ -272,6 +273,141 @@ td {
 tr:hover td {
     background-color: #dfe4e9ad;
     cursor: pointer;
+}
+
+.city {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+
+}
+
+.city .imgcity {
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 15px auto;
+    width: 100%;
+    height: 300px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 9px rgb(0, 0, 0, 0.2);
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.imgcity h6 {
+    transition: all 0.3s ease;
+    transform: translateX(0);
+    display: inline-block;
+    color: white;
+    font-size: 0.9rem;
+    backdrop-filter: blur(2px);
+    border: 1.4px solid white;
+    border-radius: 50px;
+    font-weight: normal;
+    padding: 5px 10px;
+}
+
+.city .imgcity:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+.city .imgcity:hover h6 {
+    transition: all 1.5s ease;
+    transform: translateX(-500px);
+}
+
+#fes {
+    background: url('../images/fes.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#casa {
+    background: url('../images/casa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#marrakech {
+    background: url('../images/marrakech.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.regionlogo {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.regionlogo:hover {
+    transform: scale(1.05);
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1B2D41;
+    padding: 20px;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.sitemap {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#par1,
+#par2,
+#par3,
+#par4,
+#par5,
+#par6,
+#par7 {
+    scroll-margin-top: 80px;
+}
+
+.ulmap li {
+    color: white;
+}
+
+.ulmap li:hover {
+    text-decoration: underline;
+}
+
+#contactez {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: underline;
+    margin-left: 10px;
+    color: rgb(255, 247, 0);
+    display: none;
 }
 
 @media (max-width: 575px) {
@@ -339,11 +475,6 @@ tr:hover td {
         padding: 0px 20px;
     }
 
-    .statistique {
-        width: 100%;
-        padding: 0px 20px;
-    }
-
     table {
         margin: 20px 0px;
         font-size: 0.7rem;
@@ -355,6 +486,23 @@ tr:hover td {
 
     td {
         padding: 9px 14px;
+    }
+
+    .city .imgcity {
+        margin: 15px auto;
+        width: 90%;
+        height: 250px;
+    }
+
+    .imgcity h6 {
+        font-size: 0.6rem;
+        padding: 5px 10px;
+    }
+
+    .regionlogo {
+        width: 100px;
+        height: 100px;
+        margin: 5px 10px;
     }
 
     /* footer */
@@ -425,11 +573,6 @@ tr:hover td {
         padding: 5px 30px;
     }
 
-    .statistique {
-        width: 100%;
-        padding: 5px 30px;
-    }
-
     table {
         margin: 25px 0px;
         font-size: 0.8rem;
@@ -443,11 +586,23 @@ tr:hover td {
         padding: 11px 16px;
     }
 
+    .imgcity h6 {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+    }
+
     /* footer */
 
     #contactez {
         display: block;
     }
+
+    .regionlogo {
+        width: 130px;
+        height: 130px;
+        margin: 10px 13px;
+    }
+
 }
 
 @media (min-width: 825px) and (max-width: 991px) {
@@ -506,11 +661,6 @@ tr:hover td {
         padding: 10px 35px;
     }
 
-    .statistique {
-        width: 100%;
-        padding: 0px 35px;
-    }
-
     table {
         font-size: 0.9rem;
     }
@@ -522,51 +672,11 @@ tr:hover td {
     td {
         padding: 13px 18px;
     }
-    
-}
 
-/* footer */
+    .regionlogo {
+        width: 160px;
+        height: 160px;
+        margin: 15px 18px;
+    }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #1B2D41;
-    padding: 20px;
-    width: 100%;
-}
-
-footer p {
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-.sitemap {
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 10px;
-}
-
-.ulmap li {
-    color: white;
-}
-
-.ulmap li:hover {
-    text-decoration: underline;
-}
-
-#contactez {
-    padding: 0px;
-    margin: 0px;
-    text-decoration: underline;
-    margin-left: 10px;
-    color: rgb(255, 247, 0);
-    display: none;
 }
