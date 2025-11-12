@@ -346,10 +346,13 @@ tr:hover td {
 }
 
 .regionlogo {
+    border: 1px solid #2c333c;
+    box-shadow: 5px 5px 9px rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
     width: 200px;
     height: 200px;
     float: right;
-    margin: 10px;
+    margin: 15px;
     transition: all 0.3s ease;
 }
 
@@ -382,6 +385,12 @@ tr:hover td {
     background-size: cover;
     width: 60%;
     height: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cardimg:hover {
+    transform: scale(1.05) rotate(1deg);
 }
 
 #card1 {
@@ -398,6 +407,38 @@ tr:hover td {
 
 #card4 {
     background-image: url('../images/Jardin_Majorelle.jpg');
+}
+
+#card5 {
+    background-image: url('../images/Medina-de-fes.jpg');
+}
+
+#card6 {
+    background-image: url('../images/jnan-sbil.jpg');
+}
+
+#card7 {
+    background-image: url('../images/quarawiyin.jpg');
+}
+
+#card8 {
+    background-image: url('../images/chouara-tannery.jpg');
+}
+
+#card9 {
+    background-image: url('../images/Hassan-II-Mosque.jpg');
+}
+
+#card10 {
+    background-image: url('../images/casa-medina.jpg');
+}
+
+#card11 {
+    background-image: url('../images/Quartier-habous-casablanca.jpg');
+}
+
+#card12 {
+    background-image: url('../images/place-mouhamed-v.jpg');
 }
 
 .cardtxt {
