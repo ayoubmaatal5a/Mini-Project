@@ -58,6 +58,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 9999;
+    box-shadow: 10px 10px 10px rgba(138, 2, 235, 0.2);
 }
 
 .logo {
@@ -213,6 +214,7 @@ p {
     font-size: 1.2rem;
     text-indent: 30px;
     transition: all 0.3s ease;
+    text-align: justify;
 }
 
 .sp {
@@ -276,53 +278,88 @@ p {
     transform: translateY(-45px);
 }
 
+#img-w {
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    float: right;
+    border-radius: 5px;
+    margin: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 10px 10px 10px rgba(138, 2, 235, 0.2);
+}
+
+#img-b {
+    width: 200px;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    float: right;
+    border-radius: 5px;
+    margin: 15px;
+    transition: all 0.3s ease;
+}
+
+.img-f:hover {
+    transform: translateY(-15px);
+}
+
+.boold {
+    font-weight: bold;
+}
+
+.pimg {
+    text-align: justify;
+}
+
 .list-j {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 35px;
+    padding: 20px 0;
+    justify-items: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    gap: 30px;
-    transition: all 0.3s ease;
 }
 
 .j {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    width: 100%;
+    max-width: 260px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 250px;
-    border-radius: 15px 15px 3px 3px;
-    overflow: hidden;
-    transition: all 0.3s ease;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     cursor: pointer;
-    margin-bottom: 10px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.18);
+    position: relative;
 }
 
 .j:hover {
-    transform: scale(1.1);
-    border-radius: 3px;
-}
-
-.j:hover .j-name {
-    transform: translateY(+50px);
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.28);
+    border-radius: 12px;
 }
 
 .j-name {
-    transform: translateY(0);
-    transition: all 1s ease;
-    display: flex;
-    justify-content: center;
     width: 100%;
-    background-color: #6436af;
+    padding: 10px;
+    background: rgba(100, 54, 175, 0.90);
     color: white;
-    padding: 2px 5px;
-    font-weight: normal;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(60px);
+    transition: transform 0.35s ease;
+}
 
+.j:hover .j-name {
+    transform: translateY(0px);
 }
 
 #j1 {
@@ -561,13 +598,27 @@ footer a {
         font-size: 1.1rem;
     }
 
+    .list-j {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
     .j {
-        width: 170px;
-        height: 220px;
+        height: 245px;
     }
 
     .j-name {
         font-size: 0.6rem;
+    }
+
+    #img-w {
+        width: 140px;
+        height: 170px;
+    }
+
+    #img-b {
+        width: 140px;
+        height: 150px;
     }
 
     /* footer */
@@ -655,13 +706,18 @@ footer a {
         transform: translateY(-40px);
     }
 
-    .j {
-        width: 190px;
-        height: 240px;
-    }
-
     .j-name {
         font-size: 0.7rem;
+    }
+
+    #img-w {
+        width: 150px;
+        height: 180px;
+    }
+
+    #img-b {
+        width: 150px;
+        height: 160px;
     }
 
     /* footer */
