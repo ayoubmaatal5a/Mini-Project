@@ -285,9 +285,8 @@ p {
     background-position: center;
     float: right;
     border-radius: 5px;
-    margin: 15px;
+    margin: 5px 15px;
     transition: all 0.3s ease;
-    box-shadow: 10px 10px 10px rgba(138, 2, 235, 0.2);
 }
 
 #img-b {
@@ -297,7 +296,7 @@ p {
     background-position: center;
     float: right;
     border-radius: 5px;
-    margin: 15px;
+    margin: 5px;
     transition: all 0.3s ease;
 }
 
